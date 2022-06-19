@@ -1,7 +1,6 @@
 .close {
     -fx-background-color: transparent;
     -fx-border-radius: 50px;
-    -fx-background-image: url("img/close.png");
     -fx-background-size: 18px;
     -fx-background-repeat: no-repeat;
     -fx-background-position: 50%;
@@ -15,7 +14,6 @@
 .minimize {
     -fx-background-color: transparent;
     -fx-border-radius: 50px;
-    -fx-background-image: url("img/minimize.png");
     -fx-background-size: 18px;
     -fx-background-repeat: no-repeat;
     -fx-background-position: 50%;
@@ -41,11 +39,11 @@
     -fx-padding: 20px 15px 5px 15px;
 }
 
-.previous {
+/*.previous {
     -fx-background-color: transparent;
     -fx-font-size: 15px;
     -fx-text-fill: #FFFFFF;
-}
+}*/
 
 .button {
     -fx-background-color: transparent;
