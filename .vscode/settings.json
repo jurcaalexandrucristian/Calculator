@@ -1,7 +1,16 @@
 {
-    "java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": [
+        "src"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+        "d:\\Projects\\Programs\\Java\\Calculator\\lib\\javafx.base.jar",
+        "d:\\Projects\\Programs\\Java\\Calculator\\lib\\javafx.graphics.jar",
+        "d:\\Projects\\Programs\\Java\\Calculator\\lib\\javafx.media.jar",
+        "d:\\Projects\\Programs\\Java\\Calculator\\lib\\javafx.web.jar",
+        "d:\\Projects\\Programs\\Java\\Calculator\\lib\\javafx.controls.jar",
+        "d:\\Projects\\Programs\\Java\\Calculator\\lib\\javafx.fxml.jar",
+        "d:\\Projects\\Programs\\Java\\Calculator\\lib\\javafx-swt.jar",
+        "d:\\Projects\\Programs\\Java\\Calculator\\lib\\javafx.swing.jar"
     ]
 }

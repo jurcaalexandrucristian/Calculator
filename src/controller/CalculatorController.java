@@ -14,8 +14,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class CalculatorController implements Initializable {
-    Double data = 0.0;
-    int operation = -1;
+    private Double data = 0.0;
+    private int operation = -1;
 
     @FXML private Button keyMinus;
     @FXML private Button keyNine;
@@ -35,6 +35,7 @@ public class CalculatorController implements Initializable {
     @FXML private Button keyEquals;
     @FXML private Button keyFive;
 
+    @FXML private ImageView utilImg;
     @FXML private TextField result;
 
     @FXML 
@@ -74,31 +75,31 @@ public class CalculatorController implements Initializable {
 
     @FXML
     void handle(ActionEvent event) {
-        if (event.getSource() == keyOne) {
+        if (event.getSource() == keyOne)
             result.setText(result.getText() + "1");
-        } else if (event.getSource() == keyTwo) {
+        else if (event.getSource() == keyTwo)
             result.setText(result.getText() + "2");
-        } else if (event.getSource() == keyThree) {
+        else if (event.getSource() == keyThree)
             result.setText(result.getText() + "3");
-        } else if (event.getSource() == keyFour) {
+        else if (event.getSource() == keyFour)
             result.setText(result.getText() + "4");
-        } else if (event.getSource() == keyFive) {
+        else if (event.getSource() == keyFive)
             result.setText(result.getText() + "5");
-        } else if (event.getSource() == keySix) {
+        else if (event.getSource() == keySix)
             result.setText(result.getText() + "6");
-        } else if (event.getSource() == keySeven) {
+        else if (event.getSource() == keySeven)
             result.setText(result.getText() + "7");
-        } else if (event.getSource() == keyEight) {
+        else if (event.getSource() == keyEight)
             result.setText(result.getText() + "8");
-        } else if (event.getSource() == keyNine) {
+        else if (event.getSource() == keyNine)
             result.setText(result.getText() + "9");
-        } else if (event.getSource() == keyZero) {
+        else if (event.getSource() == keyZero)
             result.setText(result.getText() + "0");
-        } else if (event.getSource() == keyDot) {
+        else if (event.getSource() == keyDot)
             result.setText(result.getText() + ".");
-        } else if (event.getSource() == clear) {
+        else if (event.getSource() == clear)
             result.setText("");
-        } else if (event.getSource() == keyPlus) {
+        else if (event.getSource() == keyPlus) {
             data = Double.parseDouble(result.getText());
             operation = 1;
             result.setText("");
@@ -133,7 +134,7 @@ public class CalculatorController implements Initializable {
                     answer = 0.0;
                     try {
                         answer = data / secondOperand;
-                    } catch(Exception e) { result.setText("Error"); }
+                    } catch (Exception e) { result.setText("Error"); }
                     result.setText(String.valueOf(answer));
                     break;
             }
@@ -141,6 +142,10 @@ public class CalculatorController implements Initializable {
     }
 
     @Override
-    public void initialize(URL url, ResourceBundle rb) {}
+    public void initialize(URL url, ResourceBundle rb) {
+        utilImg.setOnContextMenuRequested(event -> {
+            
+        });
+    }
 }
 

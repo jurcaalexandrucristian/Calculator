@@ -11,9 +11,9 @@ public class Calculator extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("res/main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("res/fxml/main.fxml"));
         Scene scene = new Scene(root);
-        scene.getStylesheets().add("res/main.css");
+        scene.getStylesheets().add("res/css/main.css");
         scene.setOnMousePressed((event) -> {
             x = event.getSceneX() - scene.getX();
             y = event.getSceneY() - scene.getY();
